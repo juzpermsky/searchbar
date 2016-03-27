@@ -1,0 +1,35 @@
+<head>
+  <title>searchbar</title>
+</head>
+
+<body>
+  <div class="search-input">
+    <div class="property half">property</div>
+  </div>
+  <br>
+
+  <div class="search-input">
+    <div class="property half"><input type="text" name="prop" placeholder="property"></div>
+  </div>
+  <br>
+<div id="test" class="search-input">
+  <span class="property full">property</span><span  class="value">value</span>
+</div>
+<br>
+
+<div class="search-input">
+  <div class="property half">{{> inputAutocomplete settings=settings placeholder="property"}}</div>
+</div>
+<br>
+
+<span class="qproperty qfull">property</span><span class="qvalue">value</span>
+
+</body>
+
+<template name="ttt">
+
+</template>
+
+<template name="completeResult">
+  {{name}}
+</template>
